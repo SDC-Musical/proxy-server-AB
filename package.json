@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
-    "lint": "eslint . --ext .js",
-    "react-dev": "webpack --watch"
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
