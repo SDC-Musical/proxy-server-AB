@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "artillery": "artillery run stress_test/artillery.yml"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,12 @@
   },
   "homepage": "https://github.com/Team-Structure/proxy-server-AB#readme",
   "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6",
     "nodemon": "^2.0.6",
-    "path": "^0.12.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
@@ -32,6 +34,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.4",
-    "eslint-plugin-react-hooks": "^4.1.2"
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "newrelic": "^7.0.2"
   }
 }
